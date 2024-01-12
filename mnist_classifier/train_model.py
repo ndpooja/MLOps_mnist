@@ -1,6 +1,6 @@
 import click
 import torch
-from mnist_classifier.models.model import MyNeuralNet
+from mnist_classifier import MyNeuralNet
 import os
 import datetime
 import matplotlib.pyplot as plt
@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 device = torch.device("mps" if torch.backends.mps.is_available() else "cpu")
 
 @click.command()
-@click.option("--lr", default=1e-3, help="learning rate to use for training")
+@click.option("--lr", default=1e-4, help="learning rate to use for training")
 @click.option("--batch_size", default=64, help="batch size to use for training")
 @click.option("--num_epochs", default=20, help="number of epochs to train for")
 def train(lr, batch_size, num_epochs):

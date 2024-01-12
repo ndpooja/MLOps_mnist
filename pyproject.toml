@@ -15,7 +15,7 @@ requires-python = ">=3.11"
 dynamic = ["dependencies", "optional-dependencies"]
 
 [tool.setuptools]
-packages = ["mnist_classifier", "mnist_classifier.models", "mnist_classifier.data", "mnist_classifier.visualizations"]
+packages = ["mnist_classifier"]
 
 [tool.setuptools.dynamic]
 dependencies = {file = ["requirements.txt"]}

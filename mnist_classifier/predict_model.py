@@ -1,7 +1,6 @@
-import os
 import click
 import torch
-from mnist_classifier.models.model import MyNeuralNet
+from mnist_classifier import MyNeuralNet
 
 device = torch.device("mps" if torch.backends.mps.is_available() else "cpu")
 

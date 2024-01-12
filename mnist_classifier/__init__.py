@@ -1,3 +1,1 @@
 from mnist_classifier.models.model import MyNeuralNet
-from mnist_classifier.data.make_dataset import make_dataset
-from mnist_classifier.visualizations.visualize import visualize

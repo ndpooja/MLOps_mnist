@@ -3,7 +3,7 @@ import click
 from sklearn.manifold import TSNE
 import matplotlib.pyplot as plt
 import seaborn as sns
-from mnist_classifier.models.model import MyNeuralNet
+from mnist_classifier import MyNeuralNet
 
 
 device = torch.device("mps" if torch.backends.mps.is_available() else "cpu")
@@ -37,7 +37,7 @@ def visualize(model_path='models/test/model.pt'):
     image, label = next(iter(train_loader))
 
     # Process images through the network
-    out = net.leaky_relu(net.conv1(image))
+    out = net.leaky_relu(net.conv1(image.to(device)))
     out = net.leaky_relu(net.conv2(out))
     out = net.max_pool2d(out)
     pred = net(image.to(device)).cpu().detach()
