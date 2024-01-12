@@ -1,10 +1,13 @@
 import torch
 
-def make_dataset():
 
+def make_dataset():
     """Return train and test dataloaders for MNIST."""
 
-    train_data, train_labels = [], [],
+    train_data, train_labels = (
+        [],
+        [],
+    )
 
     for i in range(5):
         train_data.append(torch.load(f"data/raw/corruptmnist/train_images_{i}.pt"))
@@ -33,6 +36,7 @@ def make_dataset():
 
     torch.save(train, "data/processed/train_dataset.pt")
     torch.save(test, "data/processed/test_dataset.pt")
+
 
 if __name__ == "__main__":
     make_dataset()

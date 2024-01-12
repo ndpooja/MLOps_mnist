@@ -1,11 +1,14 @@
-import click
-import torch
-from mnist_classifier import MyNeuralNet
-import os
 import datetime
+import os
+
+import click
 import matplotlib.pyplot as plt
+import torch
+
+from mnist_classifier import MyNeuralNet
 
 device = torch.device("mps" if torch.backends.mps.is_available() else "cpu")
+
 
 @click.command()
 @click.option("--lr", default=1e-4, help="learning rate to use for training")
@@ -42,7 +45,7 @@ def train(lr, batch_size, num_epochs):
         loss_list.append(loss.cpu().detach().numpy())  # Store loss value
 
     # Save the trained model
-    timestamp = datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
+    timestamp = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
     model_savepath = "models/" + timestamp
     os.makedirs(model_savepath)
     torch.save(net.state_dict(), f"{model_savepath}/model.pth")
@@ -58,5 +61,6 @@ def train(lr, batch_size, num_epochs):
     os.makedirs(fig_savepath)
     plt.savefig(f"{fig_savepath}/loss.pdf")
 
+
 if __name__ == "__main__":
-    train()   
+    train()
