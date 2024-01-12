@@ -1,4 +1,4 @@
-# mnist_classifier
+# MNIST Pytorch Classifier
 
 MNIST simple CNN classifier implementation in pytorch for DTU Machine Learning Operations (MLOps) course.
 
