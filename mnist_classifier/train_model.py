@@ -5,7 +5,7 @@ import click
 import matplotlib.pyplot as plt
 import torch
 
-from mnist_classifier import MyNeuralNet
+from mnist_classifier.models import model
 
 device = torch.device("mps" if torch.backends.mps.is_available() else "cpu")
 
@@ -16,12 +16,11 @@ device = torch.device("mps" if torch.backends.mps.is_available() else "cpu")
 @click.option("--num_epochs", default=20, help="number of epochs to train for")
 def train(lr, batch_size, num_epochs):
     """Train a model on MNIST."""
-    print("Training day and night")
+    print("Training")
     print(lr)
     print(batch_size)
 
-    # TODO: Implement training loop here
-    net = MyNeuralNet().to(device)
+    net = model.MyNeuralNet().to(device)
     train_set = torch.load("data/processed/train_dataset.pt")
     train_loader = torch.utils.data.DataLoader(train_set, batch_size=batch_size, shuffle=True)
 

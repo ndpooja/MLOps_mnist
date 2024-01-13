@@ -1,1 +1,1 @@
-from mnist_classifier.models.model import MyNeuralNet
+from mnist_classifier.models import model

@@ -1,7 +1,7 @@
 import click
 import torch
 
-from mnist_classifier import MyNeuralNet
+from mnist_classifier.models import model
 
 device = torch.device("mps" if torch.backends.mps.is_available() else "cpu")
 
@@ -14,7 +14,8 @@ def predict(model_path, data_path):
     print("Predicting model on data")
 
     # Load the neural network model
-    net = MyNeuralNet().to(device)
+    net = model.MyNeuralNet().to(device)
+    print(model_path)
     net.load_state_dict(torch.load(model_path))
     net.eval()
 
