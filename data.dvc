@@ -1,6 +1,130 @@
 outs:
-- md5: e8e257bba7fd72167f7d8a4115c55241.dir
-  size: 207093792
-  nfiles: 18
-  hash: md5
+- hash: md5
   path: data
+  files:
+  - relpath: processed/.gitkeep
+    md5: d41d8cd98f00b204e9800998ecf8427e
+    size: 0
+    cloud:
+      remote_storage:
+        etag: 08ccf1b9ca92de83031001
+        version_id: '1705278803179724'
+  - relpath: processed/test_dataset.pt
+    md5: 5150562017d2ef12b41ac14c50b5521d
+    size: 15761526
+    cloud:
+      remote_storage:
+        etag: 08f9f5cacc92de83031001
+        version_id: '1705278807653113'
+  - relpath: processed/train_dataset.pt
+    md5: 875a2b3ebaad520b046f655f59e05af1
+    size: 78601532
+    cloud:
+      remote_storage:
+        etag: 08b38a94cf92de83031001
+        version_id: '1705278813046067'
+  - relpath: raw/.gitkeep
+    md5: d41d8cd98f00b204e9800998ecf8427e
+    size: 0
+    cloud:
+      remote_storage:
+        etag: 08edf1cdca92de83031001
+        version_id: '1705278803507437'
+  - relpath: raw/corruptmnist/test_images.pt
+    md5: dbaef582b7c62889340e79e408b1eb81
+    size: 15680759
+    cloud:
+      remote_storage:
+        etag: 08d8d684cd92de83031001
+        version_id: '1705278808599384'
+  - relpath: raw/corruptmnist/test_target.pt
+    md5: 07a46d22581416c598f8b052816e3f56
+    size: 80759
+    cloud:
+      remote_storage:
+        etag: 08d4f1d3ca92de83031001
+        version_id: '1705278803605716'
+  - relpath: raw/corruptmnist/train_images_0.pt
+    md5: 45a5787aa4d44cc51bbc31f963513b05
+    size: 15680768
+    cloud:
+      remote_storage:
+        etag: 08ffa3f1cc92de83031001
+        version_id: '1705278808281599'
+  - relpath: raw/corruptmnist/train_images_1.pt
+    md5: a5c62febd0bb8c80df768b7c208a9d27
+    size: 15680768
+    cloud:
+      remote_storage:
+        etag: 08848df2cc92de83031001
+        version_id: '1705278808295044'
+  - relpath: raw/corruptmnist/train_images_2.pt
+    md5: f20c7ad31a03213f3fa2ae2f03e3085b
+    size: 15680768
+    cloud:
+      remote_storage:
+        etag: 08ca9b87cd92de83031001
+        version_id: '1705278808640970'
+  - relpath: raw/corruptmnist/train_images_3.pt
+    md5: c57ae96d4e686648971e65d738f0332a
+    size: 15680768
+    cloud:
+      remote_storage:
+        etag: 08a89c83cd92de83031001
+        version_id: '1705278808575528'
+  - relpath: raw/corruptmnist/train_images_4.pt
+    md5: 6d70cc8f6423c00671c2aa64fb139d67
+    size: 15680768
+    cloud:
+      remote_storage:
+        etag: 08dbb7ffca92de83031001
+        version_id: '1705278804319195'
+  - relpath: raw/corruptmnist/train_images_5.pt
+    md5: 826e31e8e2fd6296dd1ad1d4cbbf0c55
+    size: 15680768
+    cloud:
+      remote_storage:
+        etag: 08cefa9ecd92de83031001
+        version_id: '1705278809029966'
+  - relpath: raw/corruptmnist/train_target_0.pt
+    md5: e4a6683c59059f14cef44dfec30cdc21
+    size: 480768
+    cloud:
+      remote_storage:
+        etag: 08c48cdeca92de83031001
+        version_id: '1705278803772996'
+  - relpath: raw/corruptmnist/train_target_1.pt
+    md5: 89b2d0ceabecbb618b05e536eade36fe
+    size: 480768
+    cloud:
+      remote_storage:
+        etag: 08bceddbca92de83031001
+        version_id: '1705278803736252'
+  - relpath: raw/corruptmnist/train_target_2.pt
+    md5: b6eba9a036e61275df9d46f11acd0541
+    size: 480768
+    cloud:
+      remote_storage:
+        etag: 08afa0dcca92de83031001
+        version_id: '1705278803742767'
+  - relpath: raw/corruptmnist/train_target_3.pt
+    md5: a27f99f24f43d6c653e1244b21d80de0
+    size: 480768
+    cloud:
+      remote_storage:
+        etag: 08f089e0ca92de83031001
+        version_id: '1705278803805424'
+  - relpath: raw/corruptmnist/train_target_4.pt
+    md5: b1b55f6a9baa7356bf87430775e37aa6
+    size: 480768
+    cloud:
+      remote_storage:
+        etag: 08c896deca92de83031001
+        version_id: '1705278803774280'
+  - relpath: raw/corruptmnist/train_target_5.pt
+    md5: b44e2cd89f6efcbe4eb88253da30f327
+    size: 480768
+    cloud:
+      remote_storage:
+        etag: 08a8fcdbca92de83031001
+        version_id: '1705278803738152'
