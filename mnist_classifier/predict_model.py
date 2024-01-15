@@ -44,3 +44,4 @@ def predict(model_path, data_path):
 
 if __name__ == "__main__":
     predict()
+
